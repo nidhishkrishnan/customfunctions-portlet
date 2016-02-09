@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.colors.themes">
+	<author>user</author>
+	<namespace>theme</namespace>
+	<entity name="Colors" local-service="true" remote-service="true">
+		<column name="colorId" type="long" primary="true" />
+		<column name="colorName" type="String" />
+		<column name="status" type="boolean" />
+		<finder return-type="Colors" name="color">
+		    <finder-column name="colorId" />
+		    <finder-column name="colorName" />
+		    <finder-column name="status" />
+		</finder>
+	</entity>
+</service-builder>

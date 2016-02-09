@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.colors.themes.service.ColorsLocalService" class="com.colors.themes.service.impl.ColorsLocalServiceImpl" />
+	<bean id="com.colors.themes.service.ColorsService" class="com.colors.themes.service.impl.ColorsServiceImpl" />
+	<bean id="com.colors.themes.service.persistence.ColorsPersistence" class="com.colors.themes.service.persistence.ColorsPersistenceImpl" parent="basePersistence" />
+</beans>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.colors.themes.model.Colors">
+		<field name="colorId" type="long" />
+		<field name="colorName" type="String" />
+		<field name="status" type="boolean" />
+	</model>
+</model-hints>
